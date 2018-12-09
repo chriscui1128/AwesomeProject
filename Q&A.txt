@@ -1,0 +1,14 @@
+package.json
+
+"node_modules/expo/AppEntry.js"  --> "App.js"
+
+in App.js
+
+import { KeepAwake, registerRootComponent } from 'expo';
+
+/* use to keep screen active when running*/
+if (__DEV__) {
+  KeepAwake.activate();
+}
+
+registerRootComponent(rootJSFile);

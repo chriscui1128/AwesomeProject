@@ -1,21 +1,19 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { KeepAwake, registerRootComponent } from 'expo';
+import Greet from './Components/Greeting';
+import BananaImage from './Components/Banana';
+import Style from './Components/Style';
+import Layout from './Components/Layout';
+import FlexBox from './Components/FlexBox';
+import TextInput from './Components/TextInput';
+import Button from './Components/ButtonBasic';
+import ScrollView from './Components/Scroll';
+import FlatList from './Components/FlatList';
+import SectionList from './Components/SectionList';
+import FetchExample from './Components/FetchExample';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
+if (__DEV__) {
+  KeepAwake.activate();
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+registerRootComponent(FetchExample);
