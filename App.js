@@ -13,9 +13,11 @@ import SectionList from './Components/SectionList';
 import FetchExample from './Components/FetchExample';
 import Picker from './Components/PickerBasic';
 import Slider from './Components/SliderBasic';
+import HomeNavigator from './ReactNavigation/HomeReactNavigator';
+import TabNavigator from './ReactNavigation/TabNavigator';
 
 if (__DEV__) {
   KeepAwake.activate();
 }
 
-registerRootComponent(Slider);
+registerRootComponent(TabNavigator);

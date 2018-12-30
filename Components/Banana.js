@@ -7,7 +7,7 @@ export default class Bananas extends React.Component {
       uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
     };
     return (
-      <Image source={pic} style={{width: 193, height: 110}}/>
+      <Image source={pic} style={{width: 90, height: 70, alignItems: 'center'}}/>
     );
   }
 }
