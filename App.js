@@ -15,9 +15,10 @@ import Picker from './Components/PickerBasic';
 import Slider from './Components/SliderBasic';
 import HomeNavigator from './ReactNavigation/HomeReactNavigator';
 import TabNavigator from './ReactNavigation/TabNavigator';
+import Animation from './Components/Animation'
 
 if (__DEV__) {
   KeepAwake.activate();
 }
 
-registerRootComponent(TabNavigator);
+registerRootComponent(Animation);
